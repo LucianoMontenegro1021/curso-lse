@@ -17,19 +17,17 @@ int main(void) {
 
 
     GPIO_PortInit(GPIO, 0);
-
     GPIO_PinInit(GPIO, 0, BOTON, &in_config);
-
     GPIO_PortInit(GPIO, 1);
-
     GPIO_PinInit(GPIO, 1, LED, &out_config);
+
 
     while(1) {
     	if(!GPIO_PinRead(GPIO, 0, BOTON)) {
 
     		GPIO_PinWrite(GPIO, 1, LED, 0);
 
-        	for(uint32_t i = 0; i < 500000; i++);
+
 
     	}
     	else {
@@ -39,5 +37,7 @@ int main(void) {
 
     	}
     }
+
+	for(uint32_t i = 0; i < 500000; i++);
     return 0;
 }
