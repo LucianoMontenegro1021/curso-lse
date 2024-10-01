@@ -26,18 +26,12 @@ int main(void) {
     	if(!GPIO_PinRead(GPIO, 0, BOTON)) {
 
     		GPIO_PinWrite(GPIO, 1, LED, 0);
-
-
-
     	}
     	else {
     		// Apago el LED
     		GPIO_PinWrite(GPIO, 1, LED, 1);
-
-
     	}
+    	for(uint32_t i = 0; i < 300000; i++);
     }
-
-	for(uint32_t i = 0; i < 500000; i++);
     return 0;
 }
