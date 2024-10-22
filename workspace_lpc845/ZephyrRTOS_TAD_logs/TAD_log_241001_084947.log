@@ -1,6 +1,0 @@
-"Task Aware Debugger for GDB" version 11.10.0 (202404041456)
-Copyright 2016-2023 NXP
-==================================
-08:49:41.642 INFO: [ZephyrRTOS] .config file could not be read [C:\Users\estudiante\Documents\GitHub\curso-lse\workspace_lpc845\01_blinky\Debug\.config (El sistema no puede encontrar el archivo especificado)]
-08:49:41.642 INFO: [TadModel] DSF session ID 7 has started.
-08:49:47.476 INFO: [TadModel] DSF session ID 7 has ended.
